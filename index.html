@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sth about my hometown" />
+    <title>Discover Grajewo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/30c2478e1f.js"
+      crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<li<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+  :root {
+  --primary-color: #668f04;
+  --heading-font-family: "Permanent Marker", cursive;
+  --secondary-font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 70px !important;
+}
+
+h1:hover {
+  cursor: default;
+}
+
+h2 {
+  font-family: var(--heading-font-family);
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 30px !important;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 50px !important;
+  width: 70%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6%;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0 !important;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--heading-font-family);
+  color: black;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+.box {
+  width: 90%;
+  background: #fff;
+  padding: 40px 55px;
+  margin: 15px auto;
+  display: table;
+  text-align: center;
+  color: inherit;
+  -webkit-transition: background-color, 0.25s, ease-in-out;
+  transition: background-color, 0.25s, ease-in-out;
+  border-radius: 10px;
+  border-color: var(--primary-color);
+  border-width: 4px;
+  border-style: double;
+}
+
+.box-before {
+  height: 250px;
+}
+
+.box-after {
+  height: 443px !important;
+}
+
+.box .inner {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.box .image {
+  text-align: center;
+}
+
+.brand {
+  margin-left: 10px;
+  font-size: 30px !important;
+  font-family: var(--heading-font-family) !important;
+  color: var(--primary-color) !important;
+}
+
+.button-explore {
+  background-color: var(--primary-color) !important;
+  font-size: 20px !important;
+  display: block !important;
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+  max-width: 70%;
+  border-radius: 50px;
+  padding: 10px 15px !important;
+  font-family: var(--secondary-font-family);
+}
+
+.coat-of-arms {
+  max-width: 45%;
+}
+
+.contact-link {
+  color: #000;
+  text-decoration: none;
+  font-family: var(--secondary-font-family);
+}
+
+.contact-link:hover {
+  color: #000;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--secondary-font-family);
+  text-align: justify;
+  color: #000;
+}
+
+.footer {
+  font-size: 20px;
+  margin: 20px;
+  color: var(--primary-color);
+  font-family: var(--heading-font-family);
+  text-align: center;
+}
+
+.GitHub-rep {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.heart:hover {
+  color: #cf181f;
+  transition: all 150ms ease-in-out;
+}
+
+.icon {
+  color: #0000008c;
+}
+
+.icons {
+  color: var(--primary-color);
+  margin: 0 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: #0d6efd;
+  transition: all 150ms ease-in-out;
+}
+
+.link-milk-museum {
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-content {
+  padding: 40px 0;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/783/original/Grajewo.jpg?1668461006");
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 600px;
+}
+.nav-link {
+  margin-left: 10px;
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 539px) {
+  h1 {
+   display:none;
+  }
+
+  .brand {
+    font-size: 28px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand {
+    margin-left: 50px;
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand brand" href="index.html" title="Homepage"
+        >Discover Grajewo</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Grajewo" target="_blank" title="Explore Grajewo"
+              >Explore</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Grajewo#History" target="_blank" title="History of Grajewo"
+              >History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:baigewelina@gmail.com" target="_blank" title="Contact Ewelina Baig"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="mt-1 mb-3">Discover Grajewo <span class="heart">❤</span></h1>
+  <section class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+<div class="box box-before" id="location" onclick="change_location()">
+<div class="inner">
+  <p>Location</p>
+  <div class="image">
+   <i class="fas fa-globe fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-before" id="inhabitants" onclick="change_inhabitants()">
+<div class="inner">
+  <p>Number of inhabitans</p>
+  <div class="image">
+   <i class="fas fa-people fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-before" id="name" onclick="change_name()">
+<div class="inner">
+  <p>Name of the town and coat of arms</p>
+  <div class="image">
+    <i class="fas fa-shield-quartered fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+     <div class="row">
+           <div class="col-md-4 col-sm-6">
+<div class="box box-before" id="city-rights" onclick="change_city_rights()">
+<div class="inner">
+  <p>City rights</p>
+  <div class="image">
+    <i class="fas fa-city fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-before" id="tourist-attractions" onclick="change_tourist_attractions()">
+<div class="inner">
+  <p>Tourist attractions</p>
+  <div class="image">
+    <i class="fas fa-church fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-before" id="museums" onclick="change_museums()">
+<div class="inner">
+  <p>Museums</p>
+  <div class="image">
+    <i class="fas fa-building-columns fa-2x icon"></i>
+  </div>
+</div>
+</div>
+      </div>
+     </div>
+      <div hidden class="row">
+      <div class="col-md-4 col-sm-6">
+<div class="box box-after" id="location2">
+<div class="inner">
+  <p class="description">Grajewo is a town in north-eastern Poland and is situated in Podlaskie Voivodeship.</p>
+  <div class="image">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/776/original/map-of-Poland.png?1668460292" alt="map of Poland"></img>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-after" id="inhabitants2">
+<div class="inner">
+  <p class="description">Grajewo has population of over 20 000 inhabitants.
+The photo shows the celebration of the anniversary of Polish independence on November 11, 2022. The city of Grajewo was represented by the Mayor Dariusz Latarowski (in the middle).
+</p>
+  <div class="image">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/774/original/inhabitants-of-Grajewo.jpg?1668460256" alt="inhabitants of Grajewo"></img>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-after" id="name2">
+<div class="inner">
+  <p class="description">The name of the town comes from the name of the village that was here before called Grajwy.
+The coat of arms of Grajewo shows a red wolf, facing heraldically to the right, against the background of three green spruces on a blue heraldic shield.
+</p>
+  <div class="image">
+    <img class="coat-of-arms" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/772/original/coat-of-arms.png?1668460088" alt="coat of arms"></img>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+     <div hidden class="row">
+           <div class="col-md-4 col-sm-6">
+<div class="box box-after" id="city-rights2">
+<div class="inner">
+  <p class="description">Grajewo gained city rights in 1540 from King Zygmunt August.</p>
+  <div class="image">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/771/original/city-rights.jpg?1668460078" alt="city rights mural"></img>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-after" id="tourist-attractions2">
+<div class="inner">
+  <p class="description">One of the biggest tourist attractions is the Neo-Gothic Church of the Holy Trinity, built in the years 1879-1882.</p>
+  <div class="image">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/769/original/church.jpg?1668460045" alt="Holy Trinity Church in Grajewo"></img>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box box-after" id="museums2">
+<div class="inner">
+  <p class="description">Dairy Tradition Center – The Museum of Milk in Grajewo, established in 2016, is the only such location in Poland, which became an interesting tourist attraction in the region. 
+</p>
+<a href="http://www.muzeummleka.pl/en/" target="_blank" alt="link-milk-museum">Website of Museum of Milk</a>
+  <div class="image">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/777/original/Milk-Museum.jpg?1668460310" alt="Milk Museum in Grajewo"></img>
+  </div>
+</div>
+</div>
+      </div>
+     </div>
+  </div>
+  </section>
+    <div class="button">
+      <a
+        href="https://en.wikipedia.org/wiki/Grajewo"
+        class="btn btn-success btn-sm button-explore col-md-3 mb-3"
+        role="button"
+        title="Explore Grajewo"
+        target="_blank"
+        >Start to explore</a
+      >
+    </div>
+    <footer>
+      <p class="footer">
+        This webpage was coded by Ewelina Baig and it is
+        <a
+          href="https://github.com/baige369/hometown-landing-page"
+          title="GitHub repository"
+          target="_blank"
+          class="GitHub-rep"
+          >open-sourced.</a
+        >
+      </p>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="mailto:baigewelina@gmail.com"
+          title="mail to Ewelina Baig"
+          target="_blank"
+          ><i class="fas fa-envelope icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ewelinabaig/"
+          title="LinkedIn Ewelina Baig"
+          target="_blank"
+          ><i class="fab fa-linkedin icons"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/ebaig3"
+          title="Facebook Ewelina Baig"
+          target="_blank"
+          ><i class="fab fa-facebook icons"></i
+        ></a>
+        <a
+          href="https://github.com/baige369"
+          title="GitHub Ewelina Baig"
+          target="_blank"
+        >
+          <i class="fab fa-github icons"></i
+        ></a>
+      </div>
+    </footer>
+  
+<script>
+let newPlace = prompt("Do you want to discover a new place? yes/no");
+      if (newPlace === "yes") {
+        alert("I am happy to show you my hometown. Please click on white boxes with different subjects😊");
+      } else {
+        alert(
+          "Nevermind. Please click on white boxes with different subjects😊"
+        );
+      }
+
+	function change_location() {
+      document.getElementById("location").innerHTML = 
+        document.getElementById("location2").innerHTML
+  }
+
+	function change_inhabitants() {
+      document.getElementById("inhabitants").innerHTML = 
+        document.getElementById("inhabitants2").innerHTML
+  }
+
+  	function change_name() {
+      document.getElementById("name").innerHTML = 
+        document.getElementById("name2").innerHTML
+  }
+  	function change_city_rights() {
+      document.getElementById("city-rights").innerHTML = 
+        document.getElementById("city-rights2").innerHTML
+  }
+  	function change_tourist_attractions() {
+      document.getElementById("tourist-attractions").innerHTML = 
+        document.getElementById("tourist-attractions2").innerHTML
+  }
+  	function change_museums() {
+      document.getElementById("museums").innerHTML = 
+        document.getElementById("museums2").innerHTML
+  }
+    </script>
+  </body>
+</html>
